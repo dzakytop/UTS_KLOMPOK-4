@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Link ke file CSS terpisah -->
+    <link rel="stylesheet" href="halamanutama.css">
+
+    <title>Bakso Raksasa Mas ADI Bontonompo</title>
+
+    <!-- Tambahkan CSS untuk animasi fade-in -->
+    <style>
+        .fade-in {
+            opacity: 0;
+            transition: opacity 2s ease-in;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+        }
+
+        .full-width-img {
+            width: 100%;
+            height: auto;
+        }
+
+        .shadow-text {
+            text-align: center;
+            color: white;
+            font-size: 3em;
+            font-weight: bold;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .shadow-subtext {
+            text-align: center;
+            color: white;
+            font-size: 1.5em;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .content {
+            padding: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">Bakso Raksasa Mas Adi</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Beranda <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="tentang-kami.html">Tentang Kami</a>
+                <a class="nav-item nav-link" href="produk-makanan.html">Produk Makanan</a>
+                <a class="nav-item nav-link" href="produk-minuman.html">Produk Minuman</a>
+                <a class="nav-item nav-link" href="kontak-kami.html">Kontak Kami</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Gambar Full-Width dengan Grid System -->
+<div class="container-fluid p-0">
+    <div class="row no-gutters">
+        <div class="col-12">
+            <img src="imgs/mas adi.jpg" class="full-width-img" alt="Mas Adi">
+            
+            <!-- Teks dengan efek shadow dan animasi fade-in -->
+            <div class="shadow-text fade-in" id="mainText">
+               <br>
+               <br>
+               <br>
+               <br>
+               <br>
+               <br>
+               <br>
+               <br>
+               Selamat Datang di Warung Bakso Mas Adi
+                <div class="shadow-subtext fade-in" id="subText"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Deskripsi dengan 2 grid -->
+<div class="container content">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Deskripsi Warung</h2>
+            <p>
+                Di Warung Bakso kami, Anda akan merasakan kelezatan bakso yang terbuat dari bahan berkualitas dan racikan bumbu spesial yang sudah kami pertahankan turun-temurun. 
+                Dengan cita rasa khas dan tekstur bakso yang lembut, kami selalu berkomitmen menyajikan makanan terbaik bagi pelanggan setia kami.
+            </p>
+            <h4>Fasilitas Warung:</h4>
+            <ul>
+                <li>Tempat makan yang nyaman dengan suasana hangat dan ramah.</li>
+                <li>Parkir luas dan aman.</li>
+                <li>Layanan pesan antar untuk kenyamanan Anda.</li>
+                <li>Promo menarik setiap minggu untuk pelanggan setia.</li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <h4>Lokasi & Jam Buka:</h4>
+            <p>
+                Kami berlokasi di Tamallayang, Kec. Bontonompo, Kabupaten Gowa, Sulawesi Selatan 92153, mudah dijangkau dan tersedia parkir yang luas. 
+                Kami buka setiap hari mulai pukul 08:00 hingga 21:00.
+            </p>
+            <h4>Pesan Antar:</h4>
+            <p>
+                Untuk kenyamanan Anda, kami menyediakan layanan pesan antar dengan mudah melalui WhatsApp di +6281297452080 
+                atau Anda juga dapat memesan melalui aplikasi pesan makanan favorit Anda.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!-- JavaScript untuk animasi fade-in saat halaman dimuat -->
+<script>
+    window.onload = function() {
+        // Dapatkan elemen teks utama dan subteks
+        var mainText = document.getElementById('mainText');
+        var subText = document.getElementById('subText');
+        
+        // Tambahkan class 'visible' untuk memicu animasi fade-in
+        setTimeout(function() {
+            mainText.classList.add('visible');
+        }, 500); // Delay untuk animasi teks utama
+
+        setTimeout(function() {
+            subText.classList.add('visible');
+        }, 1000); // Delay untuk animasi subteks
+    };
+</script>
+
+</body>
+</html>

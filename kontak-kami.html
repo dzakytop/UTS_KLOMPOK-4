@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="kontak-kami.css">
+
+    <title>Kontak Kami - Bakso Raksasa Mas ADI Bontonompo</title>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">Bakso Raksasa Mas Adi</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="index.html">Beranda</a>
+                <a class="nav-item nav-link" href="tentang-kami.html">Tentang Kami</a>
+                <a class="nav-item nav-link" href="produk-makanan.html">Produk Makanan</a>
+                <a class="nav-item nav-link" href="produk-minuman.html">Produk Minuman</a>
+                <a class="nav-item nav-link active" href="#">Kontak Kami</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="container contact-container">
+    <h2>Kontak Kami</h2>
+    <img src="imgs/unm.png" alt="Logo Perusahaan" class="logo"> <!-- Ganti dengan path logo yang sesuai -->
+    <h4>Universitas Negeri Makassar</h4>
+    <p>Menara Pinisi UNM. Jl. AP. Pettarani Makassar, Sulawesi Selatan, 90222. Tlp: 0411-865677</p>
+    
+    <!-- Tombol untuk membuka form saran -->
+    <button type="button" class="btn btn-primary mt-4" data-toggle="modal" data-target="#saranModal">Kirim Saran</button>
+
+    <!-- Modal untuk form saran -->
+    <div class="modal fade" id="saranModal" tabindex="-1" role="dialog" aria-labelledby="saranModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="saranModalLabel">Form Saran</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="saranForm">
+                        <div class="form-group">
+                            <label for="namaPengirim">Nama Pengirim</label>
+                            <input type="text" class="form-control" id="namaPengirim" placeholder="Masukkan Nama Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="emailPengirim">Email Pengirim</label>
+                            <input type="email" class="form-control" id="emailPengirim" placeholder="Masukkan Email Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="isianSaran">Isian Saran</label>
+                            <textarea class="form-control" id="isianSaran" rows="3" placeholder="Tuliskan saran Anda" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Kirim Saran</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <BR<BR><BR><BR><BR>
+    <div class="footer-container">
+        <p class="footer-text">© Kelompok 4 - Universitas Negeri Makassar 2024 - 085757256501</p>
+    </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!-- JavaScript untuk menangani submit form -->
+<script>
+    document.getElementById('saranForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Mencegah pengiriman form
+
+        // Tampilkan pesan terima kasih
+        alert('Terima kasih atas saran Anda!');
+
+        // Tutup modal
+        $('#saranModal').modal('hide');
+
+        // Reset form setelah ditutup
+        this.reset();
+    });
+</script>
+</body>
+</html>

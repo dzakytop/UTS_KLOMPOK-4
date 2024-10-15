@@ -1,0 +1,17 @@
+.contact-container {
+    text-align: center; /* Center align the text */
+    margin-top: 80px; /* Space from the navbar */
+}
+
+.logo {
+    width: 150px; /* Adjust logo size */
+    margin: 20px 0; /* Margin above and below the logo */
+}
+
+.footer-container {
+    margin-top: 50px; /* Tambahkan margin atas untuk memindahkan footer lebih ke bawah */
+}
+
+.footer-text {
+    font-size: 0.8rem; /* Smaller font size for footer text */
+}

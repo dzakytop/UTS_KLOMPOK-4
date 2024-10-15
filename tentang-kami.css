@@ -1,0 +1,9 @@
+/* Efek hover pada nama tim */
+.team-member:hover h5 {
+    font-size: 1.5rem; /* Ukuran font ketika mouse mendekat */
+    transition: font-size 0.3s ease-in-out; /* Transisi yang halus */
+}
+
+.team-member h5 {
+    transition: font-size 0.3s ease-in-out; /* Transisi untuk kembali normal */
+}
